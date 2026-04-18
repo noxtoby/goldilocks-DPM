@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 63.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Goldilocks-DPM"
+version = "2025.02.12"
+license = { file = "LICENSE" }
+requires-python = ">= 3.7"
+dependencies = [
+  "numpy", "scipy", "matplotlib", "statsmodels", "scikit-learn","tqdm",
+  "pathlib","pandas","seaborn",
+  # "pickle","os","sys"
+]
+authors = [{name = "Neil Oxtoby", email = "n.oxtoby@ucl.ac.uk"}]
+maintainers = [{name = "Neil Oxtoby", email = "n.oxtoby@ucl.ac.uk"}]
+keywords = ["disease", "progression", "modelling", "modeling", "model", "sustain"]
+
+# [project.optional-dependencies]
+# demos = []
+
+[project.optional-dependencies]
+sustain = ["pySuStaIn@git+https://github.com/ucl-pond/pySuStaIn"]
+
+
+[project.urls]
+Repository = "https://github.com/noxtoby/goldilocks-dpm.git"
+Issues = "https://github.com/noxtoby/goldilocks-dpm/issues"
